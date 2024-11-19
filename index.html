@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Expense Tracker</h1>
+
+    <!-- Monthly Salary Input -->
+    <form id="salary-form">
+      <input type="number" id="monthly-salary" placeholder="Enter Monthly Salary (Rs.)" required>
+      <button type="submit">Set Salary</button>
+    </form>
+
+    <!-- Expense Input -->
+    <form id="expense-form">
+      <input type="text" id="expense-reason" placeholder="Reason for Expense" required>
+      <input type="number" id="expense-amount" placeholder="Amount (Rs.)" required>
+      <button type="submit">Add Expense</button>
+    </form>
+
+    <!-- Expense List and Summary -->
+    <div id="expense-list"></div>
+    <h3>Total Expenses: Rs. <span id="total-expenses">0</span></h3>
+    <h3>Money Left Over: Rs. <span id="money-left">0</span></h3>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
